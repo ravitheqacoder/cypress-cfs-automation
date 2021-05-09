@@ -12,8 +12,13 @@ Given('user is navigating to commbank home page', () =>
   
 When('user clicks on tab {string}', function(tabname) 
 {
+  if (Cypress.env('viewportWidth')>768){
   homepage.gettablist().contains(tabname).click()
-  
+  }else
+  {
+    homepage.getHamburgerMenu().click()
+    homepage.getmenulistMobile().contains(tabname).click()
+  }
 })
 
   Then('user validates the {string} page has been loaded successfully', function(tabname) 

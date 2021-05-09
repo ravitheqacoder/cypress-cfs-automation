@@ -1,8 +1,8 @@
 {
     "defaultCommandTimeout": 8000,
     "pageLoadTimeout": 30000,
-    "viewportWidth":1280,
-    "viewportHeight":800,
+    "viewportWidth":768,
+    "viewportHeight":1024,
     "env": {
       "url": "https://www.commbank.com.au/"
     },
